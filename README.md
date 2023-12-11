@@ -1,4 +1,4 @@
-# Azure Resource Group and Virtual Machine Set-up
+# Azure Resource Group, Virtual Machine, and Remote Desktop Connection Set-up
 
 # ![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/b21de015-743d-4d9b-be87-8eff4c33cd35)
 
@@ -6,7 +6,7 @@
 
 </p> 
 
-<h1>Microsoft Azure Virtual Machine </h1>
+<h1>Microsoft Azure Virtual Environment </h1>
 This tutorial outlines a thorough series of steps on how to create a resource group and setup a virtual machine in Microsoft Azure and how to connect the VM with Remote Desktop connection.<br />
 
 
@@ -17,7 +17,7 @@ This tutorial outlines a thorough series of steps on how to create a resource gr
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows Servers</b> (21H2)
 
 
 
@@ -44,7 +44,7 @@ In this section, there are two options to choose from to start creating a resour
 
 ![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/0bcf6090-2168-49b0-9dc8-dc47b90e8dbe)
 
-The section (indicated by the short arrow) is what the resource group should be named. It can be named anything, however it would be ideal that the name of the resource group aligns with the content (s) that will be stored into it to be more organised. For example: In the resource group on the image shown, it is named "AD-lab2023" because a lab with Active Directory configuration will be conducted and stored inside of the resource group so that the lab can be easily identifiable as to which resource group is belongs to. The region section (indicated by the long arrow) is where the resource group is being created, that is whichever region of the world the resource group is being created, select accordingly. Afterwhich, click on "Review + create" (in the bottom left corner) to finish setting up the resource group.
+The section (indicated by the short arrow) is what the resource group should be named. It can be named anything, however it would be ideal that the name of the resource group aligns with the content (s) that will be stored into it to be more organised. For example: In the resource group on the image shown, it is named "AD-lab2023" because a lab with Active Directory configuration will be conducted and stored inside of the resource group so that the lab can be easily identified as to which resource group is belongs to. The region section (indicated by the long arrow) is where the resource group is being created, that is whichever region of the world the resource group is being created, select accordingly. Afterwhich, click on "Review + create" (in the bottom left corner) to finish setting up the resource group.
 </p>
 
 <h> </h>
@@ -89,7 +89,7 @@ Click on the first option (indicated by the arrow) "Azure virtual machine" to st
 
 ![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/f195094f-c5e3-4894-9186-93f07c2c442c)
 
-This first half entails the storage of the virtual machine into a resource group, and since there has already been a resource group (AD-lab2023) created, the VM can be assigned to it. The other section demands that the virtual machine has a name, the name could be anything, however it's important that its name relates to the project (s) that the VM will be used for so as to better identify what service was deployed into it.
+This first half entails the storage of the virtual machine into a resource group, and since there has already been a resource group (AD-lab2023 for example) created, the VM can be assigned to it. The other section requires that the virtual machine has a name, the name could be anything, however it's important that its name relates to the project (s) that the VM will be used for so as to better identify what service was deployed into it.
 
 - Step 4: Select VM's Operating System and performance type
 
@@ -167,13 +167,13 @@ The VM public IP address is prerequisite in establishing a remote connection.
 
 ![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/8d5aba88-9948-46ec-98df-3cbebd5abfe9)
 
-To open the Remote Desktop Connection app, click on the Windows explorer icon and in the search bar section type "Remote Desktop Connection" and it should open. Afterwhich, paste the VM public IP address that was copied into the "computer" section (indicated by the arrow), then click "connect."
+To open the Remote Desktop Connection app, click on the Windows explorer icon and in the search bar section type "Remote Desktop Connection", click on it and it should open. Afterwhich, paste the VM public IP address that was copied into the "computer" section (indicated by the arrow), then click "connect."
 
 - Step 3: Add Credentials
 
 ![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/694f3566-eece-4263-83db-38f3d501f0ae)
 
-This page will emerge after attempting to remotely connect to the VM. It is requesting the credentials that were used to create the VM such as the username and password. Provide those credentials to advance to the authentication step.
+This page will emerge after attempting to remotely connect to the VM. It is requesting the credentials that were used to create the VM, such as the username and password. Provide those credentials to advance to the authentication step.
 
 - Step 4: Proceed to establish the connection
 
