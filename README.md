@@ -167,7 +167,24 @@ The VM public IP address is prerequisite in establishing a remote connection.
 
 ![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/8d5aba88-9948-46ec-98df-3cbebd5abfe9)
 
-To open the Remote Desktop Connection app, click on the Windows explorer icon and in the search bar type "Remote Desktop Connection
+To open the Remote Desktop Connection app, click on the Windows explorer icon and in the search bar section type "Remote Desktop Connection" and it should open. Afterwhich, paste the VM public IP address that was copied into the "computer" section (indicated by the arrow), then click "connect."
 
+- Step 3: Add Credentials
+
+![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/694f3566-eece-4263-83db-38f3d501f0ae)
+
+This page will emerge after attempting to remotely connect to the VM. It is requesting the credentials that were used to create the VM such as the username and password. Provide those credentials to advance to the authentication step.
+
+- Step 4: Proceed to establish the connection
+
+![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/710b76eb-5219-4bb6-82fe-015dd456cb5b)
+
+In this section, in order to finaliazed the remote connection of the VM, click 'yes' (indicated with an arrow) to proceed.
+
+- Step 5: Remote Desktop Connection successful
+
+![image](https://github.com/Meeksaint/Azure-Virtual-Machine/assets/150755308/0a90806d-4373-4d24-99bb-f92e97279915)
+
+There is now a remote connection of the virtual machine. To be certain of this, the public IP address is shown indicating that there is a live connection.
 
 
